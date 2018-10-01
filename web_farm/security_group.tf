@@ -11,6 +11,13 @@ resource "aws_security_group" "web" {
   }
 
   ingress {
+    from_port = 22
+    to_port = 22
+    protocol = "TCP"
+    security_groups = [ "${data.terraform_remote_state.vpc.bastion_security_group_id}" ]
+  }
+
+  ingress {
     from_port = 0
     to_port = 0
     protocol = "-1"
