@@ -1,6 +1,7 @@
+#!/bin/bash
 apt-get -y update
 apt-get -y install nginx
-cat > /var/www/nginx/index.html <<EOF
+cat > /var/www/html/index.html <<EOF
 <html>
 <head><title>Demo</title></head>
 <body>
