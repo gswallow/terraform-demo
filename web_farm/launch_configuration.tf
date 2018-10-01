@@ -6,6 +6,7 @@ resource "aws_launch_configuration" "web" {
   name_prefix     = "${var.ENV}-web-"
   image_id        = "${data.aws_ami.ubuntu.id}"
   instance_type   = "t2.micro"
+  key_name        = "${data.terraform_remote_state.vpc.key_pair_name}"
   security_groups = [ "${aws_security_group.web.id}" ]
   user_data       = "${data.template_file.user_data.rendered}"
 
