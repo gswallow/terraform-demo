@@ -17,3 +17,7 @@ variable "cidr_block" {
 variable "cidr_length" {
   default = 18
 }
+
+variable "SSH_ALLOWED_CIDR" {
+  default = "127.0.0.1/32"
+}

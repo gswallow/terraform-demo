@@ -21,3 +21,11 @@ output "key_pair_name" {
 output "default_security_group_id" {
   value = "${aws_default_security_group.default.id}"
 }
+
+output "bastion_security_group_id" {
+  value = "${aws_security_group.bastion.id}"
+}
+
+output "bastion_ip_address" {
+  value = "${aws_instance.bastion.public_ip}"
+}
