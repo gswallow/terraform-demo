@@ -10,6 +10,14 @@ output "private_subnet_ids" {
   value = "${aws_subnet.private.*.id}"
 }
 
+output "ssh_key_pem" {
+  value = "${tls_private_key.ssh.private_key_pem}"
+}
+
+output "key_pair_name" {
+  value = "${aws_key_pair.ssh.key_name}"
+}
+
 output "default_security_group_id" {
   value = "${aws_default_security_group.default.id}"
 }
