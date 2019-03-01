@@ -1,7 +1,7 @@
 resource "aws_instance" "bastion" {
   ami = "${data.aws_ami.ubuntu.id}"
   subnet_id = "${aws_subnet.public.*.id[0]}"
-  instance_type = "t2.nano"
+  instance_type = "t3.nano"
   key_name = "${aws_key_pair.ssh.key_name}"
   security_groups = ["${aws_security_group.bastion.id}"]
 }
@@ -37,5 +37,3 @@ resource "aws_security_group" "bastion" {
     Environment = "${var.ENV}"
   }
 }
-
-  
