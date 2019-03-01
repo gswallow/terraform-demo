@@ -147,7 +147,7 @@ so as Terraform is transitioning from v0.11 to v0.12, so don't get too invested.
 you'll find a lot of examples of interpolation filters like `cidrhost` and `element`, and even some conditional operations like using ternary 
 operators.
 
-Finally, once you get the hang of writing terrafor, you should look into modules:
+Once you get the hang of writing Terraform code, you should look into modules:
 
 https://www.terraform.io/docs/configuration-0-11/modules.html
 
