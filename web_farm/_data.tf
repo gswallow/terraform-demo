@@ -9,11 +9,8 @@ data "aws_availability_zones" "available" {}
 # resources to assist with automation efforts.
 
 data "terraform_remote_state" "vpc" {
-  backend = "s3"
-  config {
-    bucket = "terraform-tfstate-993356857210"
-    key    = "vpc.tfstate"
-    region = "us-east-1"
-    profile = "gregonaws"
+  backend = "local"
+  config = {
+    path = "${path.cwd}/../vpc/terraform.tfstate"
   }
 }
