@@ -32,7 +32,14 @@ git clone https://github.com/gswallow/terraform-demo.git
 
 In either case, wherever you clone or download your copy of the repository doesn't matter.  Just make sure it's in a place you'll be able to find later.
 
-### Show Me the Easiest Thing to Do
+### Hello, Hal
+The 'hello_hal' folder takes creates a file that says, "hello, Hal."  Change into this directory and run `terraform init`
+
+Running `terraform init` will download a "local" provider, which creates files.  The next step is to run `terraform apply .` (including the ".").   You will be prompted to contiinue; it's safe to say yes.  What's happening behind the scenes?  In short, a little bit of everything that you can do with Terraform.  Dig into the code later.  See if you can extend it (I left some hints).
+
+You can override the default vaule of the variable with your own name.  Copy the "greg.tfvars" to your own name, and change the value of the "my_name" variable.  Run `terraform apply -f my_name.tfvars .`
+
+### Build Real Stuff!
 The 'vpc' folder in this repository has no pre-requisites other than your AWS credentials.  Using the command-line of your choice (terminal or powershell), change directory into the vpc directory and run the following commands:
 
 ```bash
