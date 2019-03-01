@@ -5,7 +5,7 @@ cat > /var/www/html/index.html <<EOF
 <html>
 <head><title>Demo</title></head>
 <body>
-<h1>Hello, Tekniholiks!</h1>
+<h1>Holla!!</h1>
 Hopefully this demo went well
 </body>
 </html>
