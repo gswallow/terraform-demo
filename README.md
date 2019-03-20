@@ -5,6 +5,10 @@ This repository contains some basic demos of [Terraform](https://terraform.io), 
 - a dependent auto-scaling group of web servers (they will be launched within the VPC)
 - a reusable module that creates VMware virtual machines (vSphere required)
 
+### Slides
+
+Slides accompanying this Git repository are [here](https://docs.google.com/presentation/d/1U8XU2gfQhXyw14myACWTEmdSjdqfZ_kwC878TMjBGPo/edit?usp=sharing)
+
 ### Prerequisites
 Download Terraform [here](https://www.terraform.io/downloads.html).  Each download is simply a zip file with a compiled executable enclosed.  Extract that executable to the location of your choice and make sure its permissions are right (e.g. chmod 755).  Good locations include /usr/local/bin, ~/bin, or %userprofile%/bin if you're a Windows user.  Be sure to add this folder to your PATH.  For Windows users, you can change your path in the Control Panel, under User Accounts.  Choose your own Windows account and choose "Change my environment variables." Edit your PATH variable and add ";%USERPROFILE%\bin" to the end of it (including the semicolon).
 
