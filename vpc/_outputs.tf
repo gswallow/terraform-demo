@@ -11,7 +11,7 @@ output "private_subnet_ids" {
 }
 
 output "ssh_key_pem" {
-  value = "${tls_private_key.ssh.private_key_pem}"
+  value = "${format("\n\n%s\n\n", tls_private_key.ssh.private_key_pem)}"
 }
 
 output "key_pair_name" {
