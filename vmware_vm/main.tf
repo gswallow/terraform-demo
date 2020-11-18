@@ -1,5 +1,5 @@
 module "vmware_vms" {
-  source           = "modules/vm"
+  source           = "./modules/vm"
   vm_count         = "${var.vm_count}"
   vm_name          = "demo"
   template_id      = "${data.vsphere_virtual_machine.template.id}"
