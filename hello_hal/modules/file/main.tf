@@ -4,5 +4,5 @@ locals {
 
 resource "local_file" "hello_world" {
   content  = "${var.my_name}\n"
-  filename = "${local.my_file}"
+  filename = local.my_file
 }

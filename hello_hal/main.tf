@@ -1,5 +1,5 @@
 module "hello_world" {
-  my_name = "${var.my_name}"
+  my_name = var.my_name
   source  = "./modules/file"
 }
 
@@ -7,4 +7,3 @@ module "hello_world" {
 #  my_name = "Greg"
 #  source = "./modules/file"
 #}
-
