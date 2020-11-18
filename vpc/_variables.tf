@@ -5,10 +5,10 @@ variable "cidr_prefix" {
 }
 
 variable "cidr_block" {
-  type = "map"
+  type = map(number)
   default = {
     "us-east-1" = 0
-    "us-east-2" = 64 
+    "us-east-2" = 64
     "us-west-2" = 128
     "us-west-1" = 192
   }
